@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cloud Scheduler Dashboard</title>
+
+<link rel="stylesheet" href="/static/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="topbar">
+    <h1>☁️ Cloud Scheduler Control Center</h1>
+    <button onclick="run()" class="runBtn">▶ Run Simulation</button>
+</div>
+
+<!-- STATUS STRIP -->
+<div class="statusStrip">
+    <div class="statusBox">
+        <span>System Load</span>
+        <h2 id="load">--</h2>
+    </div>
+
+    <div class="statusBox">
+        <span>Algorithm Selected</span>
+        <h2 id="algo">--</h2>
+    </div>
+
+    <div class="statusBox">
+        <span>Avg Job Time</span>
+        <h2 id="avgJob">--</h2>
+    </div>
+</div>
+
+<!-- MAIN GRID -->
+<div class="mainGrid">
+
+    <!-- LEFT SIDE -->
+    <div class="leftPanel">
+
+        <div class="card">
+            <h3>📊 System Check</h3>
+            <p id="check"></p>
+        </div>
+
+        <div class="card">
+            <h3>🧠 Scheduling Decision Logic</h3>
+            <p id="decision"></p>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="rightPanel">
+
+        <div class="chartCard">
+            <h3>Performance Chart</h3>
+            <canvas id="chart"></canvas>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- METRICS -->
+<h2 class="sectionTitle">⚡ Algorithm Performance</h2>
+
+<div class="metricsGrid">
+    <div class="metricCard" id="m1"></div>
+    <div class="metricCard" id="m2"></div>
+    <div class="metricCard" id="m3"></div>
+</div>
+
+<script src="/static/sim.js"></script>
+
+</body>
+</html>

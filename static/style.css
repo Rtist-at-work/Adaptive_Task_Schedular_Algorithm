@@ -1,0 +1,82 @@
+body{
+    font-family: Arial;
+    background:#0f172a;
+    color:white;
+    margin:0;
+}
+
+/* TOP BAR */
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:#020617;
+}
+
+.runBtn{
+    background:#22c55e;
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+/* STATUS STRIP */
+.statusStrip{
+    display:flex;
+    justify-content:space-around;
+    padding:20px;
+}
+
+.statusBox{
+    background:#1e293b;
+    padding:15px 25px;
+    border-radius:10px;
+    text-align:center;
+    width:200px;
+}
+
+/* MAIN GRID */
+.mainGrid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    padding:20px 40px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+.chartCard{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    height:300px;
+}
+
+/* METRICS */
+.sectionTitle{
+    text-align:center;
+    margin-top:30px;
+}
+
+.metricsGrid{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.metricCard{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    width:250px;
+    text-align:center;
+}
